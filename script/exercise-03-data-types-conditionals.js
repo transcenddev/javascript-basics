@@ -112,3 +112,4 @@ module.exports = {
 	fullName,
 	age
 }
+
