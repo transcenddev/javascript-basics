@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Capitalize the first letter of a string
+
+      let str = prompt("Enter a text");
+
+      function capitalize(str) {
+        return str
+          ? str.charAt(0).toUpperCase() + str.slice(1) 
+          : "No input value.";
+      }
+
+      capitalize(str);
+    </script>
+  </body>
+</html>
+
+
+<!-- 
+1. Create a input prompt to get a string from the user.
+2. Create a function called capitalize that takes a string as an argument.
+3. Check if the string is not empty.
+4. If the string is not empty, return the first letter of the string capitalized and concatenate the rest of the string.
+5. If the string is empty, return "No input value."
+6. Call the function with the string as an argument.
+-->
