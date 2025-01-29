@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>function expressions</title>
+  </head>
+  <body>
+    <script>
+
+      // function declaration can be
+      sayHi("John"); // Hello, John
+
+      function sayHi(name) {
+        alert( `Hello, ${name}` );
+      }
+
+      let age = prompt("What's your age?", 18);
+
+      let welcome(age < 18) ?
+        function() { alert("Hello!"); } :
+        function() { alert("Greetings!"); };
+    </script>
+  </body>
+</html>
+
+<!-- 
+Summary
+
+Functions are values. They can be assigned, copied or declared in any place
+of the code. 
+
+If the function is declared as a separate statement in the main
+code flow, that’s called a “Function Declaration”. 
+
+Function declaration is visible everywhere.
+
+Function expressions are like functions that are inside assigned to variables 
+
+We can use function declaration to organize code because we can call function before it gets declare
+but if it not suited we can use function expressions as the code above. 
+
+Function Expressions are created when the execution flow reaches them
+-->
