@@ -12,6 +12,46 @@ reference: https://www.freecodecamp.org/news/how-to-think-like-a-programmer-less
 How To Think Like A Programmer
 
 
-
 reference: https://www.youtube.com/watch?v=azcrPFhaY9k
 
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+video on repetitive programming techniques.
+reference: https://ocw.mit.edu/courses/res-tll-004-stem-concept-videos-fall-2013/resources/basic-programming-techniques/
+
+
+Divide a programming problem into simpler, analogous pieces.
+Solve the problem by combining solutions to simpler pieces.
+
+key takeaways:
+problems are combinations of simpler problems
+
+ex.
+the computer only knows how to eat a single spoon of cereal.
+how can a computer eat a bowl of a cereal?
+by eating more single spoon of cereal
+
+
+# General Iterative Framework
+
+function EatCereal(amount)
+{
+  if( simple case ) 
+  {
+    solution for simple case
+  }
+
+  else 
+  {
+    Divide into simpler case
+    EatCereal ( simpler case )
+  }
+}
+
+recurssion approach becuase most complex problem depends on solutions to the simpler pieces, recurssion creates queue of jobs waiting to be completed.
+
+
+
+
+
+String manipulation
