@@ -19,8 +19,18 @@
       // If the user fails all three attempts, display a negative result and exit.
 
       // Pseudocode
-      const attempts = 0;
-      const correctPassword = "password";
+      const correctPass = "Password123";
+      let inputPass = prompt("Please enter your password:");
+      let attempts = 0;
+
+      while (inputPass != correctPass && ++attempts < 3) {
+        inputPass = prompt("Please enter your password:");
+      }
+      if (attempts == 3) {
+        alert("Your account has been blocked!");
+      } else {
+        alert("Thank you for providing the right password!");
+      }
     </script>
   </body>
 </html>
