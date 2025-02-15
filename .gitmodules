@@ -1,0 +1,3 @@
+[submodule "javascript-exercises"]
+	path = javascript-exercises
+	url = https://github.com/transcenddev/javascript-basics
