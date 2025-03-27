@@ -9,34 +9,37 @@
 
 
 // SELECT and REFERENCE the element
-const list = document.querySelector("ul");
-const input = document.querySelector("input");
-const addButton = document.querySelector("button")
+const myList = document.querySelector('ul');
+const input = document.querySelector('input');
+const addButton = document.querySelector('#btn');
 
-// When the addButton is CLICKED => Add the item to list
-addButton.addEventListener("click", () => {
-  alert("Item Added!");
+// CREATE a function when the addButton is clicked the input will be add in the list
+addButton.addEventListener('click', () => {
+  alert('Add Item!');
 
-  // STORE the input into myItem
+  // STORE the input 
   const myItem = input.value;
   input.value = '';
 
-  // CREATE an element for list
-  const listItem = document.createElement("li");
-  const listText = document.createElement("span");
-  const deleteButton = document.createElement("button");
+  // CREATE a list of items
+  const listItem = document.createElement('li');
+  const listText = document.createElement('span');
+  const deleteButton = document.createElement('button')
 
-  // APPEND the list item to the list
+  // APPEND the input to the list items
   listItem.appendChild(listText);
-  listText.textContent = myItem ;
+  listText.textContent = myItem;
   listItem.appendChild(deleteButton);
   deleteButton.textContent = 'Delete';
-  list.appendChild(listItem);
 
-  // DELETE the list item
+  // APPEND the list items in the parent list node
+  myList.appendChild(listItem);
+
+  // CREATE a delete function button
   deleteButton.addEventListener('click', () => {
-    list.removeChild(listItem);
+    myList.removeChild(listItem);
   });
-
+  
+  // FOCUS on the element when entring the next shopping list tiem
   input.focus();
 });
